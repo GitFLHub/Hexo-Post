@@ -1,6 +1,7 @@
- git add *
- git status
- time=$(date "+%Y-%m-%d %H-%M-%S")
- git commit -m ${time}
- git pull
- git push
+git pull
+git add *
+git status
+read -p "评论：" tag
+git commit -m $tag
+git pull
+git push
